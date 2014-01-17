@@ -9,12 +9,14 @@
 		<script type="text/javascript" src="js/auto-pagination.min.js"></script>
 		<script type="text/javascript">
 			$(function(){
-				load_pagination_pageno_tail("page_area", 20, 3, 5, "http://www.charlestech.org?page=");
+				load_pagination_pageno("page_area", 20, get_param("page"), 5, "demo.html?page=");	// 方式1
+				load_pagination("page_area_1", 20, 5, "page", "demo.html");	// 方式2
 			});
 		</script>
 	</head>
 	
 	<body>
 		<div class="page_area"></div>
+		<div class="page_area_1"></div>
 	</body>
 </html>
